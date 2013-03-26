@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}, A Board and Activity Portal for Trello Organizations
+	
+	a(href="https://trello.com/1/connect?key=#{public_key}&name=MyApp&response_type=token") Log in to your Trello Account
+	
+	#loggedout
+		a#connectLink(href='#') Connect To Trello
+		
+	#loggedin
+		#options
+			p Logged in to as <span id="fullName"></span>
+			h2 Your organization is <span class="orgName"></span>
+			a#disconnect(href='#') Log Out

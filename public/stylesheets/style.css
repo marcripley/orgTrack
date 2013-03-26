@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00b7ff;
+}
+#loggedout {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 30px;
+}
+#loggedin {
+  display: none;
+}
+#header {
+  padding: 4px;
+  border-bottom: 1px solid #000;
+  background: #eee;
+}
+#output {
+  padding: 4px;
+}
+.card {
+  display: block;
+  padding: 2px;
+}
